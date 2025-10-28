@@ -282,6 +282,7 @@
 <body>
 
     <!-- ===== NAVBAR ===== -->
+             
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{% url 'home' %}"> OceanWorld</a>
@@ -295,6 +296,9 @@
             </div>
         </div>
     </nav>
+
+    {% block content %}
+      
 
     <!-- ===== HERO SECTION ===== -->
     <section class="hero-section">
@@ -390,6 +394,7 @@
 </section>
 
 
+    {% endblock content %}
 
 
 
